@@ -1,0 +1,100 @@
+.App {
+    text-align: center;
+    background: linear-gradient(to right, rgb(255, 0, 98),rgb(178, 4, 221),rgb(69, 1, 158));
+    height: 100vh;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container{
+    padding: 4rem 3rem;
+    border-radius: 0.5rem;
+    margin-bottom: 13rem;
+    min-width:fit-content;
+}
+
+
+.containerImagen span {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+.containerImagen span:nth-child(1) {
+    margin-top: 360px;
+}
+
+.containerImagen img {
+    height: 400px;
+    width: auto;
+}
+
+.btnDescargar{
+    background: #ffffff;
+    color: #020202;
+    border-color: #000000;
+    border-width: 0.15rem;
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+}
+
+.btnDescargar:hover{
+        background:inherit;
+        color: #000000;
+        border-color: #000000;
+}
+
+.btnElegirMeme{
+    background: #ffffff;
+    color: #020202;
+    border-color: #000000;
+    border-width: 0.15rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    padding: .5rem 0.4rem;
+}
+
+.btnElegirMeme:hover{
+    background:inherit;
+    color: #000000;
+    border-color: #000000;
+}
+
