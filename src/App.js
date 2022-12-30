@@ -5,7 +5,7 @@ import html2canvas from "html2canvas";
 function App() {
     const [linea1, setLinea1] = useState('');
     const [linea2, setLinea2] = useState('');
-    const [imagen, setImagen] = useState('');
+    const [imagen, setImage] = useState('1'); //Se inicializa el valor en 1 para que tenga un valor por defecto en el primer meme
 
 
 
@@ -19,7 +19,7 @@ function App() {
 
 
     const onChangeImagen = function(evento) {
-        setImagen(evento.target.value)
+        setImage(evento.target.value)
     }
 
     const onClickExportar = function(evento) {
@@ -53,7 +53,7 @@ function App() {
 
                     {/* Inputs de texto */}
                     <div className="mb-2">
-                        <label for="email" className="form-label"></label>
+                        <label htmlFor="text" className="form-label"></label>
                         <input
                         onChange = { onChangeLinea1 }
                         placeholder="Texto 1"
@@ -63,7 +63,7 @@ function App() {
                         ></input>
                     </div>
                     <div className="mb-2">
-                        <label for="password" className="form-label"></label>
+                        <label htmlFor="text" className="form-label"></label>
                         <input
                         onChange = { onChangeLinea2 }
                         placeholder="Texto 2"
